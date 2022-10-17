@@ -12,11 +12,6 @@ type Client = hyper::Client<HttpsConnector<HttpConnector<GaiResolver>>, Body>;
 const BASE_URI: &str = "https://arweave.net";
 const MAX_CHUNK_SIZE: u64 = 256 * 1024;
 
-pub struct TransactionOffset {
-    pub size: u64,
-    pub offset: u64,
-}
-
 #[derive(Deserialize)]
 struct JsonTransactionOffset {
     pub size: String,
