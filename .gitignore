@@ -1,0 +1,7 @@
+/target
+/.vs
+
+# ignore various test download files
+*.html
+*.txt
+*.bmp
